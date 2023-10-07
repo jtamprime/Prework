@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+<link rel="stylesheet" href="styles.css">
+        <title>Survey Form</title>
+    </head>
+    <body>
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+        <form action="/form-handling-url" method="post" id="survey-form">
+          <fieldset>
+            <div>
+                <label for="name" id="name-label">Name</label><br>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div>
+                <label for="email" id="email-label">Email</label><br>
+                <input type="email" id="email" name="email_address" placeholder="Enter your Email" required>
+            </div>
+            <div>
+                <label for="age" id="number-label">Age (optional)</label><br>
+                <input type="number" id="number" name="age" placeholder="Age" min="18" max="80">
+            </div>
+            <br>
+            <div>
+           </form>   
+                <label for="role">Which option best describes your current role?</label><br>
+                <select  name="user_role_name" id="dropdown" required>
+                    <option value="none" selected disabled hidden>Select Current Role</option>
+                    <option value="student">Student</option>
+                    <option value="ftj">Full time Job</option>
+                    <option value="flt">Full time Learner</option>
+                    <option value="prefer">Prefer Not to Say</option>
+                    <option value="other">Other</option>
+                </select>
+                
+            <div>
+              <p>Would you recommend freeCodeCamp to a friend?</p>
+            </div>
+            <div>
+              <input type="radio" id="definitely" name="choice" value="definitely" checked />
+              <label for="definitely">Definitely</label>
+            </div>
+            <div>
+              <input type="radio" id="maybe" name="choice" value="maybe" />
+              <label for="maybe">Maybe</label>
+            </div>
+            <div>
+              <input type="radio" id="notSure" name="choice" value="notSure" />
+              <label for="notSure">Not Sure</label>
+            </div>
+            <br>
+            <div>
+                <label for="feature">What is your favorite feature of freeCodeCamp?</label><br>
+                <select id="feature" name="user_feature">
+                    <option value="none" selected disabled hidden>Select an option</option>
+                    <option value="challenges">Challenges</option>
+                    <option value="projects">Projects</option>
+                    <option value="community">Community</option>
+                    <option value="openSource">Open Source</option>
+                </select>
+            <div>
+            <br>
+            <div>
+              <p>What's your cat's personality? (Check all that apply)</p>
+                <input id="loving" type="checkbox" name="improved" value="loving" checked> <label for="loving">Front-End Projects</label><br>
+                <input id="lazy" type="checkbox" name="improved" value="lazy"> <label for="lazy">Back-End Projects</label><br>
+                <input id="energetic" type="checkbox" name="improved" value="energetic"> <label for="energetic">Data Visualizations</label><br>
+   <input id="loving" type="checkbox" name="improved" value="loving" checked> <label for="loving">Challenges</label><br>
+                <input id="lazy" type="checkbox" name="improved" value="lazy"> <label for="lazy">Open Source Community</label><br>
+                <input id="energetic" type="checkbox" name="improved" value="energetic"> <label for="energetic">Gitter help rooms</label><br>
+                <input id="loving" type="checkbox" name="improved" value="loving" checked> <label for="loving">Videos</label><br>
+                <input id="lazy" type="checkbox" name="improved" value="lazy"> <label for="lazy">City Meetups</label><br>
+                <input id="energetic" type="checkbox" name="improved" value="energetic"> <label for="energetic">Wiki</label><br>
+                <input id="loving" type="checkbox" name="improved" value="loving" checked> <label for="loving">Forum</label><br>
+                <input id="lazy" type="checkbox" name="improved" value="lazy"> <label for="lazy">Additional Courses</label>
+            </div> 
+            <br> 
+            <div>
+                <label for="'bio">Any comments or suggestions?</label><br>
+                <textarea id="bio" name="bio" placeholder="Enter your comments here..."></textarea>
+            </div>
+            <div>
+                <button type="submit" id="submit">Submit</button>
+            </div>
+          </fieldset>
+          
+        
+    </body>
+</html>
